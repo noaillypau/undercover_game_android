@@ -1,0 +1,29 @@
+{
+    "players": {
+        "Paul": {
+            "current_points": 0,
+            "current_role": null
+        },
+        "Chris": {
+            "current_points": 0,
+            "current_role": null
+        },
+        "Camille": {
+            "current_points": 0,
+            "current_role": null
+        },
+        "David": {
+            "current_points": 0,
+            "current_role": null
+        }
+    },
+    "current_words":{
+        "correct": null,
+        "incorrect": null
+    },
+    "game_config":{
+        "joueurs": 4,
+        "undercovers": 2,
+        "mrwhite": 0
+    }
+}
