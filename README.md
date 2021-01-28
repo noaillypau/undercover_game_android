@@ -23,6 +23,11 @@
   - [ ] install setup tools `sudo apt-get install python3-setuptools`
   - [ ] install buildozer `cd buildozer` > `sudo python3 setup.py install` > `cd ..`
   - [ ] clone this repo with the main.py file `git clone https://github.com/noaillypau/undercover_game_android`
+- [ ] deploy app
+  - [ ] go to the cloned rdirectory `cd undercover_game_android`
+  - [ ] init buildozer `buildozer init`
+  - [ ] edit the buildozer.spec file, add files needed (ex:json), edit name of app, add python packages req, and uncomment the debugging (line 219)
+ 
   
  
 
