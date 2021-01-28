@@ -155,3 +155,5 @@ sm.current = "menu"
 class MyMainApp(App):
     def build(self):
         return sm
+    
+MyMainApp.run()
