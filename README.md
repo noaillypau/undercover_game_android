@@ -38,8 +38,15 @@
 # update
 
 ```ssh
-test
+cd ..
+rm -rf undercover_game_android
+git clone https://github.com/noaillypau/undercover_game_android
+cd undercover_game_android
+buildozer init
+```
 
+```ssh
+buildozer android debug deploy run
 ```
  
   
