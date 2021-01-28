@@ -18,9 +18,11 @@
 - [ ] install requierments on vm
   - [ ] open terminal
   - [ ] install git `sudo apt install git`
-  - [ ] import buildozer `git clone https://github.com/kivy/buildozer.git`
+  - [ ] clone buildozer `git clone https://github.com/kivy/buildozer.git`
   - [ ] install python 3 `sudo apt-get install python3.8`
   - [ ] install setup tools `sudo apt-get install python3-setuptools`
+  - [ ] install buildozer `cd buildozer` > `sudo python3 setup.py install` > `cd ..`
+  - [ ] clone this repo with the main.py file `git clone https://github.com/noaillypau/undercover_game_android`
   
  
 
