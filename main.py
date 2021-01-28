@@ -1,23 +1,25 @@
+import kivy
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
 Window.fullscreen = True
+#Window.size = (412,869)
 # screen
 from kivy.uix.screenmanager import ScreenManager, Screen
 # object
-from kivy.uix.popup import Popup
+#from kivy.uix.popup import Popup
 from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
-from kivy.uix.image import Image
-from kivy.uix.behaviors import ButtonBehavior
+#from kivy.uix.image import Image
+#from kivy.uix.behaviors import ButtonBehavior
 from kivy.uix.button import Button
 # layout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
 # prop
-from kivy.properties import ObjectProperty
-from kivy.properties import NumericProperty, StringProperty, ObjectProperty
+#from kivy.properties import ObjectProperty
+#from kivy.properties import NumericProperty, StringProperty, ObjectProperty
 # python
 import json
 import numpy as np
