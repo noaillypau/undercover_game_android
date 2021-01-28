@@ -14,7 +14,14 @@
   - [ ] activate usb debuging
 - [ ] Start ubuntu and setup usb
   - [ ] restart ubuntu
-  - [ ] on bottom right of vm, if there is a button "no usd device attached", right click > usb setting > 
+  - [ ] on bottom right of vm, if there is a button "no usd device attached", right click > usb setting > usb > device > select your android > ok > return to the righ click > select your android
+- [ ] install requierments on vm
+  - [ ] open terminal
+  - [ ] install git `sudo apt install git`
+  - [ ] import buildozer `git clone https://github.com/kivy/buildozer.git`
+  - [ ] install python 3 `sudo apt-get install python3.8`
+  - [ ] install setup tools `sudo apt-get install python3-setuptools`
+  
  
 
 
