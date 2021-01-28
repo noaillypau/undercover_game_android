@@ -27,6 +27,11 @@
   - [ ] go to the cloned rdirectory `cd undercover_game_android`
   - [ ] init buildozer `buildozer init`
   - [ ] edit the buildozer.spec file, add files needed (ex:json), edit name of app, add python packages req, and uncomment the debugging (line 219)
+  - [ ] `sudo apt update`
+  - [ ] `sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev`
+  - [ ] `pip3 install --user --upgrade cython virtualenv`
+  - [ ] `Sudo apt-get install cython`
+  - [ ] `buildozer android debug deploy run`
  
   
  
