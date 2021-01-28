@@ -1,8 +1,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.core.window import Window
-Window.fullscreen = False
-Window.size = (360,640)
+Window.fullscreen = True
 # screen
 from kivy.uix.screenmanager import ScreenManager, Screen
 # object
@@ -155,5 +154,8 @@ sm.current = "menu"
 class MyMainApp(App):
     def build(self):
         return sm
-    
-MyMainApp.run()
+
+if __name__ == "__main__":
+    import sys
+    app = MyMainApp()
+    sys.exit(app.run())
