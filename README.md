@@ -1,5 +1,10 @@
 # undercover_game_android
 
+# deploy
+
+- [ ] install virtualbox and an ubuntu image
+
+
 
 
 # References
