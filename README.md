@@ -30,7 +30,7 @@
   - [ ] `sudo apt update`
   - [ ] `sudo apt install -y git zip unzip openjdk-8-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev`
   - [ ] `pip3 install --user --upgrade cython virtualenv`
-  - [ ] `Sudo apt-get install cython`
+  - [ ] `sudo apt-get install cython`
   - [ ] `buildozer android debug deploy run`
   
   
@@ -53,7 +53,7 @@ buildozer android debug deploy run
  # Debuging
  
  - [ ] pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available
- - [ ] fix: `apt install libssl-dev` > `buildozer android clean`
+ - [ ] fix: `sudo apt install libssl-dev` > `buildozer android clean` > delete .buildozer file > `buildozer Android debug` > `buildozer Android debug deploy run`
 
 
 
