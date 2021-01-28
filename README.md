@@ -32,6 +32,15 @@
   - [ ] `pip3 install --user --upgrade cython virtualenv`
   - [ ] `Sudo apt-get install cython`
   - [ ] `buildozer android debug deploy run`
+  
+  
+  
+# update
+
+```ssh
+test
+
+```
  
   
  # Debuging
