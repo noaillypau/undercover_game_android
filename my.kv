@@ -11,14 +11,14 @@
     
         Label:
             text:"Undercover / Mr.White"
-            font_size: (root.width**2 + root.height**2) / 13**4
+            font_size: (root.width**2 + root.height**2) / 17**4
             pos_hint: {"x":0.2, "top":0.95}
             size_hint: 0.6, 0.1
 
         Button:
             pos_hint:{"x":0.05,"y":0.6}
             size_hint: 0.4, 0.2
-            font_size: (root.width**2 + root.height**2) / 13**4
+            font_size: (root.width**2 + root.height**2) / 18**4
             text: "Nouvelle Partie"
             on_release:
                 root.manager.transition.direction = "up"
@@ -27,7 +27,7 @@
         Button:
             pos_hint:{"x":0.55,"y":0.6}
             size_hint: 0.4, 0.2
-            font_size: (root.width**2 + root.height**2) / 13**4
+            font_size: (root.width**2 + root.height**2) / 18**4
             text: "Mots"
             on_release:
                 root.manager.transition.direction = "up"
@@ -36,7 +36,7 @@
         Button:
             pos_hint:{"x":0.05,"y":0.35}
             size_hint: 0.4, 0.2
-            font_size: (root.width**2 + root.height**2) / 13**4
+            font_size: (root.width**2 + root.height**2) / 18**4
             text: "Historique"
             on_release:
                 root.manager.transition.direction = "up"
@@ -45,7 +45,7 @@
         Button:
             pos_hint:{"x":0.55,"y":0.35}
             size_hint: 0.4, 0.2
-            font_size: (root.width**2 + root.height**2) / 13**4
+            font_size: (root.width**2 + root.height**2) / 18**4
             text: "Statistiques"
             on_release:
                 root.manager.transition.direction = "up"
@@ -54,114 +54,14 @@
 
 <GamePrepaWindow>
     name : "gamePrepa"
-
-    FloatLayout:
-    
-        Label:
-            text:"Preparation partie"
-            font_size: (root.width**2 + root.height**2) / 15**4
-            pos_hint: {"x":0.2, "top":0.95}
-            size_hint: 0.6, 0.1
-            
-        Button:
-            pos_hint:{"x":0.05,"y":0.85}
-            size_hint: 0.1, 0.1
-            font_size: (root.width**2 + root.height**2) / 16**4
-            text: "Menu"
-            on_release:
-                root.manager.transition.direction = "down"
-                root.onPushed_ReturnMenu()
-                
-        Label:
-            size_hint: 0.2,0.1
-            pos_hint: {"x":0.05, "top":0.65}
-            text: "Nbs Joueurs: "
-            font_size: (root.width**2 + root.height**2) / 15**4
-
-        TextInput:
-            pos_hint: {"x":0.3, "top":0.65}
-            size_hint: 0.4, 0.1
-            id: idInput_nbsJoueurs
-            multiline: False
-            font_size: (root.width**2 + root.height**2) / 15**4
-            
-        Label:
-            size_hint: 0.2,0.1
-            pos_hint: {"x":0.05, "top":0.5}
-            text: "Nbs Undercover: "
-            font_size: (root.width**2 + root.height**2) / 15**4
-
-        TextInput:
-            pos_hint: {"x":0.3, "top":0.5}
-            size_hint: 0.4, 0.1
-            id: idInput_nbsUndercovers
-            multiline: False
-            font_size: (root.width**2 + root.height**2) / 15**4
-            
-        Label:
-            size_hint: 0.2,0.1
-            pos_hint: {"x":0.05, "top":0.35}
-            text: "Nbs Mr.White: "
-            font_size: (root.width**2 + root.height**2) / 15**4
-
-        TextInput:
-            pos_hint: {"x":0.3, "top":0.35}
-            size_hint: 0.4, 0.1
-            id: idInput_nbsMrWhite
-            multiline: False
-            font_size: (root.width**2 + root.height**2) / 15**4
-            
-            
-        Button:
-            pos_hint:{"x":0.85,"y":0.05}
-            size_hint: 0.1, 0.1
-            font_size: (root.width**2 + root.height**2) / 16**4
-            text: "Go"
-            on_release:
-                root.manager.transition.direction = "down"
-                root.onPushed_LauchGame()
       
 
 <GameRoundWindow>
     name : "gameRound"
-
-    FloatLayout:
-    
-        Label:
-            text:"Jeu en cours"
-            font_size: (root.width**2 + root.height**2) / 15**4
-            pos_hint: {"x":0.2, "top":0.95}
-            size_hint: 0.6, 0.1
-            
-        Button:
-            pos_hint:{"x":0.05,"y":0.85}
-            size_hint: 0.1, 0.1
-            font_size: (root.width**2 + root.height**2) / 16**4
-            text: "Menu"
-            on_release:
-                root.manager.transition.direction = "down"
-                root.onPushed_ReturnMenu()
       
 
 <WordWindow>
     name : "word"
-
-    FloatLayout:
-    
-        Label:
-            text:"Mots"
-            font_size: (root.width**2 + root.height**2) / 15**4
-            pos_hint: {"x":0.2, "top":0.95}
-            size_hint: 0.6, 0.1
-            
-        Button:
-            pos_hint:{"x":0.05,"y":0.85}
-            size_hint: 0.1, 0.1
-            font_size: (root.width**2 + root.height**2) / 16**4
-            text: "Menu"
-            on_release:
-                root.manager.transition.direction = "down"
-                root.onPushed_ReturnMenu()
       
 
 <HistoryWindow>

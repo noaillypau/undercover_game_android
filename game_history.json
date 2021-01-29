@@ -1,29 +1,34 @@
 {
-    "players": {
-        "Paul": {
-            "current_points": 0,
-            "current_role": ""
-        },
-        "Chris": {
-            "current_points": 0,
-            "current_role": null
-        },
-        "Camille": {
-            "current_points": 0,
-            "current_role": null
-        },
-        "David": {
-            "current_points": 0,
-            "current_role": null
-        }
-    },
-    "current_words":{
-        "correct": null,
-        "incorrect": null
-    },
-    "game_config":{
-        "joueurs": 4,
-        "undercovers": 2,
-        "mrwhite": 0
-    }
-}
+	"0": {
+	"players": {
+	"Nom1": {
+	"current_points": 0, 
+	"current_role": "undercover", 
+"still_playing": true}, 
+"Nom2": {
+	"current_points": 2, 
+	"current_role": "normal", 
+"still_playing": true}, 
+"Nom3": {
+	"current_points": 0, 
+	"current_role": "normal", 
+"still_playing": true}}, 
+"current_word": {
+	"correct": "tour de tokyo", 
+"incorrect": "tour eiffel"}, 
+"game_config": {
+	"nbs_players": 3, 
+	"team_composition_mode": "fix", 
+"team_composition_qty": {
+	"normal": 2, 
+	"undercover": 1, 
+"mrwhite": 0}, 
+"points_won_as": {
+	"normal": 1, 
+	"undercover": 2, 
+"mrwhite": 5}}, 
+"used_words_id": ["225_228_230_199_222_224", 
+	"232_222_234_228_64_201_206_134_218_212_215"], 
+"use_IA_for_words": false, 
+"round": 2, 
+"sub_round": 1}}
