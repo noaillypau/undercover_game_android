@@ -59,6 +59,7 @@ buildozer android debug deploy run
 - [ ] Add transalation (eng - fr)
 - [ ] Add setting button on main menu screen with options to change language, IA word (couple generated with gensim), and defaults point won per role
 - [ ] fix issues when for app deploy when code in splitted in different files
+- [ ] Add game icone
  
   
  # Debuging
