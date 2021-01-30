@@ -60,7 +60,8 @@ buildozer android debug deploy run
 - [ ] Add setting button on main menu screen with options to change language, IA word (couple generated with gensim), and defaults point won per role
 - [ ] fix issues when for app deploy when code in splitted in different files
 - [ ] Add game icone
-- [ ] Fix bug that sometimes makes the app close when word menu is openned
+- [x] Fix bug that sometimes makes the app close when word menu is openned
+  - [x] the probelm was due to game_word.json that had some non utf-8 encoded words. Remade the the json file and added `ensure_ascii=True` in `Word.add_word(word1,word2)`
  
   
  # Debuging
