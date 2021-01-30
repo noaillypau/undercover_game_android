@@ -54,6 +54,9 @@ buildozer android debug deploy run
  
  - [ ] pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available
  - [ ] fix: `sudo apt install libssl-dev` > `buildozer android clean` > delete .buildozer file > `buildozer Android debug` > `buildozer Android debug deploy run`
+ 
+  -[ ] lld not installed
+ - [ ] fix: probably a package problabe, check if you put any package you used to buildozer.spec
 
 
 
