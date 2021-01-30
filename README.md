@@ -55,6 +55,7 @@ buildozer android debug deploy run
 # Todo List
 
 - [ ] Improve ui design
+- [x] add way to not use a word that has been used already in a game
 - [ ] Add statistics scrren + calculus
 - [x] Implement random role
 - [ ] Add random role button on prepaGame screen
