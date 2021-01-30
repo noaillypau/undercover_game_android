@@ -22,7 +22,7 @@ class Word():
         dict_words[Word.words_to_key(word1,word2)] = [word1, word2]
 
         with open('game_words.json','w') as f:
-            json.dump(dict_words,f,ensure_ascii=False)
+            json.dump(dict_words,f,ensure_ascii=True)
             f.close()
 
     def get_list():
