@@ -56,6 +56,8 @@ buildozer android debug deploy run
 
 - [ ] Improve ui design
 - [x] add way to not use a word that has been used already in a game
+- [x] add way to visualize reccorded words, and a possibility to add new ones
+- [x] add way to view history of games
 - [ ] Add statistics scrren + calculus
 - [x] Implement random role
 - [ ] Add random role button on prepaGame screen
