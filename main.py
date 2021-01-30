@@ -420,6 +420,7 @@ from kivy.core.window import Window
 # screen
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.scrollview import ScrollView
+from kivy.graphics import Color, Rectangle
 # object
 from kivy.uix.popup import Popup
 from kivy.uix.label import Label
@@ -987,12 +988,22 @@ class WordWindow(Screen):
 
         # add return to button menu
         button_addWord = Button(text='Add Word', 
-                             pos_hint={"x":0.80,"y":0.9},
+                             pos_hint={"x":0.82,"y":0.9},
                              size_hint= (0.12, 0.05))
-        button_addWord.bind(on_press=self.onPressed_returnMenu)
+        button_addWord.bind(on_press=self.onPressed_addWord)
         self.add_widget(button_addWord)
 
-        self.scrollView = ScrollView(size_hint=(1, 1), pos_hint={"top":0.87})
+        # add input text
+        self.input_text_1 = TextInput(text = '',
+                                     pos_hint={"x":0.38,"y":0.9},
+                                     size_hint= (0.20, 0.05))    
+        self.add_widget(self.input_text_1)    
+        self.input_text_2 = TextInput(text = '',
+                                     pos_hint={"x":0.60,"y":0.9},
+                                     size_hint= (0.20, 0.05))        
+        self.add_widget(self.input_text_2)
+
+        self.scrollView = ScrollView(size_hint=(1, 0.87), pos_hint={"top":0.87})
         self.refresh_words()
 
     def refresh_words(self):
@@ -1006,7 +1017,7 @@ class WordWindow(Screen):
         for i in range(len(list_words)):
             label = Label(text=str("{} / {}".format(list_words[i][0],list_words[i][1])), size_hint_y=None, height=120)
             layout.add_widget(label)
-        self.scrollView = ScrollView(size_hint=(1, 1), pos_hint={"top":0.87})
+        self.scrollView = ScrollView(size_hint=(1, 0.87), pos_hint={"top":0.87})
         self.scrollView.add_widget(layout)
         self.add_widget(self.scrollView)
 
@@ -1014,8 +1025,75 @@ class WordWindow(Screen):
         self.clear_widgets()
         sm.current = "menu"
 
+    def onPressed_addWord(self, instance):
+        Word.add_word(self.input_text_1.text,self.input_text_2.text)
+        self.input_text_1.text = ''
+        self.input_text_2.text = ''
+        self.refresh_words()
+
 class HistoryWindow(Screen):
-    def onPushed_ReturnMenu(self, instance):
+    def __init__(self,**kwargs):
+        super(HistoryWindow,self).__init__(**kwargs)
+        # set name        
+        self.name = "history"
+
+    def on_leave(self):
+        self.clear_widgets()
+        
+    def on_enter(self):
+        # add return to button menu
+        button_menu = Button(text='Menu', 
+                             pos_hint={"x":0.03,"y":0.9},
+                             size_hint= (0.12, 0.05))
+        button_menu.bind(on_press=self.onPressed_returnMenu)
+        self.add_widget(button_menu)
+
+
+        
+        
+        self.add_widget(Label(text="Historique des parties", 
+                             pos_hint={"x":0.5,"top":0.95},
+                             size_hint= (0.2, 0.05),                             
+                             font_size= (self.width**2 + self.height**2) / 17**4))
+
+        self.scrollView = ScrollView(size_hint=(1, 0.87), pos_hint={"top":0.87})
+        self.show_history()
+
+    def show_history(self):
+        self.scrollView.clear_widgets()
+        
+        with open('game_history.json', 'r') as f:
+            dic_history = json.load(f)
+            f.close()
+
+
+        layout = GridLayout(cols=1, spacing=40, size_hint_y=None)
+        # Make sure the height is such that there is something to scroll.
+        layout.bind(minimum_height=layout.setter('height'))
+        for i in range(len(dic_history)):
+            layout_to_add = self.get_layout_history(str(i), dic_history)
+            layout.add_widget(layout_to_add)
+        self.scrollView = ScrollView(size_hint=(1, 0.87), pos_hint={"top":0.87})
+        self.scrollView.add_widget(layout)
+        self.add_widget(self.scrollView)
+
+    def get_layout_history(self, id_history, dic_history):
+        layout_to_add = GridLayout(cols=5, spacing=1, size_hint_y=None)
+        layout_to_add.add_widget(Label(text='ID: {}'.format(id_history)))
+        layout_to_add.add_widget(Label(text='Rounds: {}'.format(dic_history[str(id_history)]["round"])))
+        layout_to_add.add_widget(Label(text='Players: {}'.format(len(dic_history[str(id_history)]['players']))))
+        layout_to_add.add_widget(Label(text=''))
+        layout_to_add.add_widget(Label(text=''))
+        for player in dic_history[str(id_history)]['players'].keys():
+            layout_to_add.add_widget(Label(text='{}: {}'.format(player,dic_history[str(id_history)]['players'][player]["current_points"])))
+
+        
+
+        return layout_to_add
+
+
+
+    def onPressed_returnMenu(self, instance):
         self.clear_widgets()
         sm.current = "menu"
         

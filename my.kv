@@ -66,23 +66,6 @@
 
 <HistoryWindow>
     name : "history"
-
-    FloatLayout:
-    
-        Label:
-            text:"Mots"
-            font_size: (root.width**2 + root.height**2) / 15**4
-            pos_hint: {"x":0.2, "top":0.95}
-            size_hint: 0.6, 0.1
-            
-        Button:
-            pos_hint:{"x":0.05,"y":0.85}
-            size_hint: 0.1, 0.1
-            font_size: (root.width**2 + root.height**2) / 16**4
-            text: "Menu"
-            on_release:
-                root.manager.transition.direction = "down"
-                root.onPushed_ReturnMenu()
     
 
 <StatsWindow>
