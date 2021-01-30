@@ -60,6 +60,7 @@ buildozer android debug deploy run
 - [ ] Add setting button on main menu screen with options to change language, IA word (couple generated with gensim), and defaults point won per role
 - [ ] fix issues when for app deploy when code in splitted in different files
 - [ ] Add game icone
+- [ ] Fix bug that sometimes makes the app close when word menu is openned
  
   
  # Debuging
