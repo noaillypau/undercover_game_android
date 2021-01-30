@@ -48,6 +48,16 @@ buildozer init
 ```ssh
 buildozer android debug deploy run
 ```
+
+# Todo List
+
+- [ ] Improve uix design
+- [ ] Add statistics scrren + calculus
+- [x] Implement random role
+- [ ] Add random role button on prepaGame screen
+- [ ] Add IA player (using gensim api for similar words)
+- [ ] Add transalation (eng - fr)
+- [ ] Add setting button on main menu screen with options to change language, IA word (couple generated with gensim), and defaults point won per role
  
   
  # Debuging
