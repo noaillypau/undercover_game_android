@@ -51,7 +51,7 @@ buildozer android debug deploy run
 
 # Todo List
 
-- [ ] Improve uix design
+- [ ] Improve ui design
 - [ ] Add statistics scrren + calculus
 - [x] Implement random role
 - [ ] Add random role button on prepaGame screen
