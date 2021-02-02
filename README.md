@@ -88,7 +88,7 @@ buildozer android debug deploy run
    - [x] fix: `sudo apt install libssl-dev` > `buildozer android clean` > delete .buildozer file > `buildozer Android debug` > `buildozer Android debug deploy run`
  
  - [x] lld not installed
-   - [x] fix: probably a package problabe, check if you put any package you used to buildozer.spec (warning json and functools packages must not be added in the spec file)
+   - [x] fix: probably a package probleme, check if you put any package you used to buildozer.spec (do not put built in packages in the spec file, cf. https://docs.python.org/3/library/)
 
 
 
