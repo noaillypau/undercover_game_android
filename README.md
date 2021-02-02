@@ -3,6 +3,18 @@
 This is a small and simplistic project that consist on my onw version of the undercover game. \
 It is codded in python using kivy and can be deploy on android. \
 
+![alt text](src/menu.PNG)
+
+![alt text](src/mots.PNG)
+
+![alt text](src/hist.PNG)
+
+![alt text](src/prepa.PNG)
+
+![alt text](src/prepa2.PNG)
+
+![alt text](src/round.PNG)
+
 # deploy
 
 - [ ] install virtualbox and an ubuntu image
