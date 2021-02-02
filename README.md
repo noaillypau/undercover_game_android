@@ -1,7 +1,7 @@
 # undercover_game_android
 
 This is a small and simplistic project that consist on my onw version of the undercover game. \
-It is codded in python using kivy and can be deploy on android. \
+It is codded in python using kivy and can be deploy on android. 
 
 ![alt text](src/menu.PNG)
 
