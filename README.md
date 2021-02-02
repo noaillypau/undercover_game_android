@@ -92,4 +92,4 @@ https://www.youtube.com/watch?v=EupAeyL8zAo
 https://kivy.org/doc/stable/
 
 * official kivy api reference
-https://kivy.org/doc/stable/api-index.html
+https://kivy.org/doc/stable/api-index.html 
